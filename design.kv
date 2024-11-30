@@ -36,7 +36,14 @@
             text: 'Submit'
             on_press: root.add_user(username.text, password.text)
 
-
+<SignUpScreenSuccess>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: 'Sign Up Successful'
+        Button:
+            text: 'Login page'
+            
 
 
 <RootWidget>:
@@ -44,3 +51,5 @@
         name: 'login_screen'
     SignUpScreen:
         name: 'sign_up_screen'
+    SignUpScreenSuccess:
+        name: 'sign_up_screen_success'
