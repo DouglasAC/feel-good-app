@@ -31,6 +31,9 @@ class RootWidget(ScreenManager):
 
 class SignUpScreen(Screen):
     def add_user(self, username, password):
+        if not username or not password:
+            self.ids.sign_up_wrong.text = "Usuario y contraseña no pueden estar vacíos!"
+            return
         with open("users.json") as file:
             users = json.load(file)
         users[username] = {'username': username, 'password': password, 'created': datetime.now().strftime("%Y-%m-%d %H-%M-%S")}
