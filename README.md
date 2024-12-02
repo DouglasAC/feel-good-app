@@ -59,24 +59,24 @@ feel-good-app/
 ```
 ## Capturas de pantalla 📸
 
-* Pagina de inicio
+* Página de inicio
 
-    ![Pagina de inicio](imgs/inicio.png)
+    ![Página de inicio](imgs/inicio.png)
 
-* Pagina de registro:
+* Página de registro:
 
-    ![Pagina de registro](imgs/registro.png)
+    ![Página de registro](imgs/registro.png)
 
-* Pagina de registro exitoso:
+* Página de registro exitoso:
 
-    ![Pagina de registro exitoso](imgs/registro_exitoso.png)
+    ![Página de registro exitoso](imgs/registro_exitoso.png)
 
 
-* Pagina principal:
+* Página principal:
 
-    ![Pagina principal](imgs/principal.png)
+    ![Página principal](imgs/principal.png)
 
-* Pruena con feliz:
+* Prueba con feliz:
 
     ![Prueba con feliz](imgs/prueba.png)
 
