@@ -8,18 +8,18 @@
             padding: 15, 15
             spacing: 20, 20
             Label:
-                text: 'User Login'
+                text: 'Inicio de Sesión'
                 font_size: '20sp'
             TextInput:
                 id: username
-                hint_text: 'Username'
+                hint_text: 'Nombre de Usuario'
             TextInput:
                 id: password
-                hint_text: 'Password'
+                hint_text: 'Contraseña'
                 password: True
             RelativeLayout:
                 Button:
-                    text: 'Login'
+                    text: 'Iniciar Sesión'
                     on_press: root.login(username.text, password.text)
                     size_hint: 0.3, 0.5
                     pos_hint: {'center_x': 0.5, 'center_y': 0.5}
@@ -32,12 +32,12 @@
             padding: 10, 10
             spacing: 10, 0
             Button:
-                text: 'Forgot Password?'
+                text: '¿Olvidaste tu Contraseña?'
                 background_color: 1, 1, 1, 0
                 opacity: 1 if self.state == 'normal' else 0.5
                 color: 0.1, 0.7, 1, 1
             Button:
-                text: 'Sign Up'
+                text: 'Registrarse'
                 on_press: root.sign_up()
                 background_color: 1, 1, 1, 0
                 opacity: 1 if self.state == 'normal' else 0.5
@@ -49,24 +49,26 @@
         padding: 20, 20
         spacing: 20, 20
         Label:
-            text: 'Sign Up for a space journey'
+            text: 'Regístrate para un viaje espacial'
         TextInput:
             id: username
-            hint_text: 'Username'
+            hint_text: 'Nombre de Usuario'
         TextInput:
             id: password
-            hint_text: 'Password'
+            hint_text: 'Contraseña'
         Button:
-            text: 'Submit'
+            text: 'Enviar'
             on_press: root.add_user(username.text, password.text)
 
 <SignUpScreenSuccess>:
     GridLayout:
         cols: 1
+        padding: 20, 20
+        spacing: 20, 20
         Label:
-            text: 'Sign Up Successful'
+            text: '¡Registro Exitoso!'
         Button:
-            text: 'Login page'
+            text: 'Ir a Iniciar Sesión'
             on_press: root.go_to_login()
 
 <LoginScreenSuccess>:
@@ -81,12 +83,12 @@
                 size_hint: 0.35, 0.35
                 pos_hint: {'center_x': 0.9, 'center_y': 0.8}
         Label:
-            text: 'How do you feel?'
+            text: '¿Cómo te sientes?'
         TextInput:
             id: feeling
-            hint_text: 'Things to try: happy, sad, angry, etc.'
+            hint_text: 'Prueba: feliz, triste, enojado, etc.'
         Button:
-            text: 'Enlighten me'
+            text: 'Ilumíname'
             on_press: root.get_quotes(feeling.text)
         ScrollView:
             Label:

@@ -23,7 +23,7 @@ class LoginScreen(Screen):
         if username in users and users[username]['password'] == password:
             self.manager.current = "login_screen_success"
         else:
-            self.ids.login_wrong.text = "Wrong username or password!"
+            self.ids.login_wrong.text = "Usuario o contraseña incorrecta!"
         
 
 class RootWidget(ScreenManager):
@@ -60,7 +60,7 @@ class LoginScreenSuccess(Screen):
             
             self.ids.quote.text = random.choice(quotes)
         else:
-            self.ids.quote.text = "Try another feeling"
+            self.ids.quote.text = "Trata otro sentimiento"
 
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
